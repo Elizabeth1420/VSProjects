@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resturant Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!--Head page-->
+  <a href="index.html">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+  </a>
+
+  <div class="wrapper">
+    <a class="button button1" onclick="openAllMenus(event);">
+      <p>Menu</p>
+    </a>
+  </div>
+
+  <div class="w3-row w3-center w3-border w3-border-dark-grey">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Steak');" id="myLink">
+      <button type="Mains, Steak, Pizza" class="btn-btn primary s4 tablink w3-padding-large w3-hover-green">Steak</button>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+      <button type= "Mains, Steak, Pizza" class="btn-btn primary s4 tablink w3-padding-large w3-hover-green">Pizza</button>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Mains');" id="myLink">
+      <!--<div class="s4 tablink w3-padding-large w3-hover-green">Mains</div> -->
+      <button type="Mains, Steak, Pizza" class="btn-btn primary s4 tablink w3-padding-large w3-hover-green">Mains</button>
+    </a>
+  </div>
+  <!--Menu Page -->
+  <!--Steak-->
+  <div id="Steak" class="w3-container menu w3-padding-32 w3-grey">
+    <h1><b>Steak with fries</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+    <p class="w3-text-grey">Steak, french fries with fresh tomatoes</p>
+    <hr>
+
+    <h1><b>Steak</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+    <p class="w3-text-grey">Fresh tomatoes, onions with a dressing</p>
+    <hr>
+  </div>
+
+  <!--Pizza-->
+  <div id="Pizza" class="w3-container menu w3-padding-32 w3-grey">
+    <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4</span></h1>
+    <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+    <hr>
+
+    <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+    <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+    <hr>
+  </div>
+
+  <!--Mains-->
+  <div id="Mains" class="w3-container menu w3-padding-32 w3-grey">
+    <h1><b>Today's Special</b> <span class="w3-tag w3-grey w3-round"></span><span
+        class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+    <p class="w3-text-grey">Ask the waiter</p>
+    <hr>
+
+    <h1><b>Steak</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+    <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+    <hr>
+
+    <h1><b>Prawns Tempura</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+    <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+    <hr>
+  </div>
+</body>
